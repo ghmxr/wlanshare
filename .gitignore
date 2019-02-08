@@ -1,0 +1,8 @@
+# Java class files
+*.class
+
+#Build
+bin/
+
+# Auto Generated
+gen/

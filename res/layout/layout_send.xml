@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+     <!--  style="?android:attr/progressBarStyleSmall" -->
+     
+     <RelativeLayout 
+         android:id="@+id/toparea"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentTop="true">
+         
+         <ImageView 
+         	android:id="@+id/img_mode"
+         	android:layout_height="100dp"
+         	android:layout_width="100dp"
+         	android:layout_alignParentTop="true"
+         	android:layout_marginTop="10dp"
+         	android:layout_centerHorizontal="true"/>
+     
+      	<TextView 
+         	android:id="@+id/textmode"
+         	android:layout_width="wrap_content"
+         	android:layout_height="wrap_content"
+         	android:layout_centerHorizontal="true"
+         	android:layout_below="@+id/img_mode"
+         	android:layout_marginTop="8dp"
+         	android:textSize="13sp"
+         />
+      	
+      	<LinearLayout  
+      	    android:id="@+id/fileinfoarea"     	   
+      	    android:layout_width="wrap_content"
+      	    android:layout_height="wrap_content"
+      	    android:orientation="horizontal"
+      	    android:layout_marginTop="7dp"
+      	    android:layout_marginLeft="20dp"
+      	    android:layout_marginRight="20dp"
+      	    android:layout_centerHorizontal="true"
+      	    android:gravity="center_vertical"
+      	    android:layout_below="@+id/textmode">
+      	    
+      	    <ImageView 
+      	        android:layout_width="25dp"
+      	        android:layout_height="25dp"
+      	        android:src="@drawable/icon_files"/>
+      	    
+      	    <TextView 
+      	        android:id="@+id/text_fileinfos1"
+      	        android:layout_height="wrap_content"
+      	        android:layout_width="wrap_content"
+      	        android:textSize="12sp"/>
+      	    
+      	    
+      	</LinearLayout>
+      	
+      	<TextView 
+      	   android:id="@+id/text_fileinfos2"
+      	   android:layout_height="wrap_content"
+      	   android:layout_width="wrap_content"
+      	   android:layout_centerHorizontal="true"
+      	   android:textSize="12sp"
+      	   android:textColor="#0073f7"
+      	   android:clickable="true"
+      	   android:layout_below="@+id/fileinfoarea"/>
+     </RelativeLayout>
+     
+     
+     
+  	<RelativeLayout 
+  	    android:id="@+id/bottomarea"
+  	    android:layout_width="match_parent"
+  	    android:layout_height="match_parent"
+  	    android:layout_below="@+id/toparea"
+  	    android:layout_above="@+id/refreshDevices"
+  	    android:layout_marginTop="30dp"
+  	    >
+  	    
+  	    <RelativeLayout 
+  	        android:id="@+id/instructorarea"
+  	        android:layout_width="match_parent"
+  	        android:layout_height="wrap_content"
+  	        android:layout_alignParentTop="true">
+  	        
+  	        <TextView 
+        		android:id="@+id/textatt"
+        		android:textSize="12sp"       		
+       	 		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:layout_alignParentLeft="true"       	 
+        		android:layout_marginLeft="15dp"
+        	/>
+    
+     		<ProgressBar
+        		android:id="@+id/progressBarDetect"      
+        		android:layout_width="25dp"
+        		android:layout_height="25dp"       
+        		android:layout_alignParentRight="true" 
+        		android:layout_marginRight="10dp"           		
+         	/>
+  	        
+  	    </RelativeLayout>
+  	    
+  	  <ImageView 
+         android:id="@+id/dividline"
+         android:layout_width="match_parent"
+         android:layout_height="1dp"
+         android:background="#cccccc"      
+         android:layout_below="@+id/instructorarea"/>
+         
+     		<RelativeLayout 
+         		android:id="@+id/listarea"
+         		android:layout_width="match_parent"
+         		android:layout_height="match_parent"
+         		android:layout_below="@+id/dividline"
+         		>
+     		
+         		<ListView 
+       				android:id="@+id/devicelist"
+        			android:layout_width="match_parent"
+        			android:layout_height="match_parent"
+        			android:paddingLeft="1dp"
+        			android:paddingRight="1dp"
+        			android:layout_marginTop="5dp"
+        		>
+        
+    			</ListView>
+    		
+         	
+         		<ImageView 
+         	   		android:id="@+id/icon_nofound"        	   
+         	   		android:layout_width="80dp"
+         	   		android:layout_height="80dp"
+         	   		android:layout_centerVertical="true"
+         	   		android:layout_centerHorizontal="true"
+         	   		android:src="@drawable/icon_nofound"
+         	   		android:visibility="invisible"
+         	    />
+         		<TextView 
+         		    android:id="@+id/text_nofound"
+         	   		android:layout_width="wrap_content"
+         	   		android:layout_height="wrap_content"
+         	   		android:textSize="16sp"
+         	   		android:layout_below="@+id/icon_nofound"
+         	   		android:layout_centerHorizontal="true"
+         	   		android:layout_marginTop="10dp"
+         	   		android:text="@string/text_nofound"
+         	   		android:visibility="invisible"
+         	  		/>
+         	    
+         	
+    		
+         	
+         
+     		</RelativeLayout>
+    
+  	    
+  	</RelativeLayout>
+    	
+
+    <Button 
+        android:id="@+id/refreshDevices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp" 
+        android:textSize="14sp"             
+        android:text="@string/button_refresh"/>
+    
+    
+    
+</RelativeLayout>

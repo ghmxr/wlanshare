@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.mxr.wlanshare.Main" >
+
+    <TextView
+        android:id="@+id/filename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="" />
+    <Button        
+        android:id="@+id/sendbt" 
+        android:background="@drawable/drawable_button_send_style"     
+        android:layout_width="170dp"
+        android:layout_height="170dp" 
+        android:textSize="18sp"      
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/middleline"
+        android:layout_marginBottom="20dp"
+        android:textColor="#ffffff"
+        android:text="@string/button_main_send"/>
+    
+    <RelativeLayout 
+        android:id="@+id/middleline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+        
+    </RelativeLayout>
+    
+     <Button 
+        android:id="@+id/receivebt"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:background="@drawable/drawable_button_receive_style"
+        android:textSize="18sp"
+        android:layout_below="@+id/middleline"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:text="@string/button_main_receive"/>
+     
+     <RelativeLayout 
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_marginBottom="20dp"
+         android:layout_centerHorizontal="true">
+         
+         <ImageView 
+             android:id="@+id/img_share"
+             android:layout_width="25dp"
+             android:layout_height="25dp"
+             android:layout_centerVertical="true"
+             android:src="@drawable/icon_share"
+             />
+         
+          <TextView 
+         	android:id="@+id/text_share"
+         	android:layout_height="wrap_content"
+         	android:layout_width="wrap_content"
+         	android:layout_centerVertical="true"
+         	android:layout_toRightOf="@+id/img_share"
+         	android:layout_marginLeft="5dp"
+         	android:textColor="#0065d7"
+         	android:textSize="15sp"
+         	android:text="@string/text_shareapp"/>
+          
+          
+         
+     </RelativeLayout>
+     
+    
+
+</RelativeLayout>

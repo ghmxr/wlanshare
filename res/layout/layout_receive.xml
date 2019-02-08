@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <ProgressBar 
+        android:id="@+id/progressBar_receive"
+        android:layout_height="100dp"
+        android:layout_width="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"       
+        android:visibility="invisible"
+        />
+    
+    <ImageView 
+        android:id="@+id/imageview_receive"      
+        android:layout_height="100dp"
+        android:layout_width="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp" 
+        android:visibility="visible"
+        />
+       
+    
+    <TextView 
+        android:id="@+id/receive_att"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageview_receive"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="14sp"       />
+    
+    <RelativeLayout 
+        android:id="@+id/middleline_receive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+        
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/bottomarea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/middleline_receive"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible">
+        
+        <ImageView 
+            android:id="@+id/receive_face"
+            android:src="@drawable/icon_face_wait"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"/>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/receive_face"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="13sp"
+            android:text="@string/text_receive_bottomarea_att"/>
+    </RelativeLayout>
+    
+    <TextView 
+        android:id="@+id/ssidinfo"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="12sp"
+        android:textColor="@color/color_text_light"/>
+
+</RelativeLayout>
